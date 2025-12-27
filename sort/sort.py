@@ -11,3 +11,11 @@ def count_sort(arr):
         if count[j]:
             for _ in range(count[j]):
                 print(j)
+
+def selection_sort(arr):
+    for i in range(len(arr)):
+        minimum = i
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[minimum]:
+                minimum = j
+        arr[i], arr[minimum] = arr[minimum], arr[i]

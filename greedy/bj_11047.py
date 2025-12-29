@@ -1,3 +1,5 @@
+#동전0
+
 N, K = map(int,input().split())
 
 arr = []

@@ -1,7 +1,7 @@
 from collections import deque
 
 def DFS(graph, v, visited):
-    visited = True
+    visited[v] = True
     print(v, end = " ")
 
     for i in graph[v]:
